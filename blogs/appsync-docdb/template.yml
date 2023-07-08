@@ -172,7 +172,7 @@ Resources:
         Properties:
           Description: "This layer contains libraries required to run Lambda function"
           CompatibleRuntimes:
-            - nodejs12.x
+            - nodejs18.x
           ContentUri: layer-blog.zip
           LayerName: !Sub "${AWS::StackName}-Libraries"
           LicenseInfo: 'MIT'
@@ -182,7 +182,7 @@ Resources:
           FunctionName: !Sub ${AWS::StackName}-appsync-DocDBFn
           Description: "This Lambda will get invoked by the appsync api"
           Handler: index.handler
-          Runtime: nodejs12.x
+          Runtime: nodejs18.x
           Timeout: 5
           CodeUri: index.zip
           Layers:
