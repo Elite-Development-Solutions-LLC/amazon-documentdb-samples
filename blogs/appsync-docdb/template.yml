@@ -279,6 +279,8 @@ Mappings:
       AMI: ami-0eeb03e72075b9bcc
     us-east-1:
       AMI: ami-047a51fa27710816e
+    us-east-2:
+      AMI: ami-069d73f3235b535bd
     us-west-1:
       AMI: ami-005c06c6de69aee84
     ca-central-1:
